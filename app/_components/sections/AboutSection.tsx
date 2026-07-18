@@ -132,7 +132,7 @@ export function AboutSection({ isActive, direction }: AboutSectionProps) {
                   <img
                     src={aboutData.logo}
                     alt="District Logo"
-                    className="w-[300px] h-[300px] md:w-[500px] md:h-[500px] object-contain drop-shadow-[0_0_30px_rgba(212,175,55,0.2)]"
+                    className="w-[250px] h-[250px] md:w-[500px] md:h-[500px] object-contain drop-shadow-[0_0_30px_rgba(212,175,55,0.2)]"
                   />
                 </motion.div>
               </div>

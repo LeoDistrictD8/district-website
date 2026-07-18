@@ -57,7 +57,7 @@ export function Navbar({ activeIndex = 0, setActiveIndex }: NavbarProps) {
       transition={{ duration: 0.8, ease: "easeOut" }}
       className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4"
     >
-      <nav className="flex items-center justify-between w-full max-w-5xl px-6 py-3 bg-grey-dark/80 backdrop-blur-md border border-white/10 rounded-full shadow-2xl">
+      <nav className="flex items-center justify-between w-full max-w-5xl px-4 py-2 md:px-6 md:py-3 bg-grey-dark/80 backdrop-blur-md border border-white/10 rounded-full shadow-2xl">
         <Link
           href="/"
           onClick={() => setActiveIndex?.(0)}
@@ -67,7 +67,7 @@ export function Navbar({ activeIndex = 0, setActiveIndex }: NavbarProps) {
           <img
             src="/images/logo/district-logo-cropped.png"
             alt="Leo District Logo"
-            className="h-10 w-auto rounded-sm"
+            className="h-8 md:h-10 w-auto rounded-sm"
           />
         </Link>
 
@@ -151,7 +151,7 @@ export function Navbar({ activeIndex = 0, setActiveIndex }: NavbarProps) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.2 }}
-            className="absolute top-[80px] left-4 right-4 bg-grey-dark/95 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl overflow-hidden py-4 px-4 flex flex-col gap-4 md:hidden"
+            className="absolute top-[64px] left-4 right-4 bg-grey-dark/95 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl overflow-hidden py-4 px-4 flex flex-col gap-4 md:hidden"
           >
             {navLinks.map((link) => (
               <div key={link.name} className="flex flex-col">

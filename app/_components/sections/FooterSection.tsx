@@ -126,7 +126,7 @@ export function FooterSection({ isActive, direction }: FooterSectionProps) {
           {isActive && (
             <motion.footer
               key="footer-content"
-              className="w-full bg-white/5 border border-white/10 rounded-2xl md:rounded-3xl p-6 sm:p-8 md:p-12 shadow-2xl backdrop-blur-md max-h-[85vh] overflow-y-auto no-scrollbar"
+              className="w-full bg-white/5 border border-white/10 rounded-2xl md:rounded-3xl py-4 px-6 md:py-6 sm:p-8 md:p-12 shadow-2xl backdrop-blur-md max-h-[85vh] overflow-y-auto no-scrollbar"
               initial="hidden"
               animate="visible"
               exit="exit"
@@ -150,7 +150,7 @@ export function FooterSection({ isActive, direction }: FooterSectionProps) {
               style={{ perspective: 1000 }}
             >
               <div className="w-full mx-auto">
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-4 gap-y-8 lg:gap-12 mb-8 md:mb-12">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-4 gap-y-4 md:gap-y-8 lg:gap-12 mb-4 md:mb-8 md:mb-12">
                   {/* Logos Column */}
                   <div className="col-span-2 md:col-span-3 lg:col-span-1 flex flex-row items-center justify-center lg:justify-start gap-4 w-full">
                     {footerData.logos.map((logo, idx) => (
@@ -168,7 +168,7 @@ export function FooterSection({ isActive, direction }: FooterSectionProps) {
                     <h4 className="text-gold font-semibold mb-6 uppercase tracking-wider text-sm">
                       {footerData.quickLinks.title}
                     </h4>
-                    <ul className="space-y-4">
+                    <ul className="space-y-1 md:space-y-4">
                       {footerData.quickLinks.links.map((link) => (
                         <li key={link.label}>
                           <Link
@@ -187,7 +187,7 @@ export function FooterSection({ isActive, direction }: FooterSectionProps) {
                     <h4 className="text-gold font-semibold mb-6 uppercase tracking-wider text-sm">
                       {footerData.resources.title}
                     </h4>
-                    <ul className="space-y-4">
+                    <ul className="space-y-1 md:space-y-4">
                       {footerData.resources.links.map((link) => (
                         <li key={link.label}>
                           <Link
@@ -203,10 +203,10 @@ export function FooterSection({ isActive, direction }: FooterSectionProps) {
 
                   {/* Contact Info Column */}
                   <div className="col-span-2 md:col-span-1">
-                    <h4 className="text-gold font-semibold mb-6 uppercase tracking-wider text-sm">
+                    <h4 className="text-gold font-semibold mb-2 md:mb-6 uppercase tracking-wider text-sm">
                       {footerData.contact.title}
                     </h4>
-                    <ul className="space-y-4 text-muted-foreground">
+                    <ul className="space-y-1 md:space-y-4 text-muted-foreground">
                       {footerData.contact.info.map((info, idx) => (
                         <li key={idx}>{info}</li>
                       ))}
@@ -215,7 +215,7 @@ export function FooterSection({ isActive, direction }: FooterSectionProps) {
 
                   {/* Follow Us Column */}
                   <div className="col-span-2 md:col-span-1">
-                    <h4 className="text-gold font-semibold mb-6 uppercase tracking-wider text-sm">
+                    <h4 className="text-gold font-semibold mb-2 md:mb-6 uppercase tracking-wider text-sm">
                       {footerData.socials.title}
                     </h4>
                     <div className="flex flex-wrap gap-2 md:gap-3">
@@ -241,7 +241,7 @@ export function FooterSection({ isActive, direction }: FooterSectionProps) {
                           <Link
                             key={platform.name}
                             href={platform.url}
-                            className="p-2 rounded-full bg-white/5 hover:bg-gold/20 text-muted-foreground hover:text-gold transition-colors"
+                            className="p-1 md:p-2 rounded-full bg-white/5 hover:bg-gold/20 text-muted-foreground hover:text-gold transition-colors"
                           >
                             <Icon className="w-5 h-5" />
                           </Link>
@@ -252,7 +252,7 @@ export function FooterSection({ isActive, direction }: FooterSectionProps) {
                 </div>
 
                 {/* Copyright */}
-                <div className="border-t border-white/10 pt-8 w-full flex flex-col md:flex-row  items-center justify-between">
+                <div className="border-t border-white/10 pt-2 sm:pt-4 md:pt-8 w-full flex flex-col md:flex-row  items-center justify-between">
                   <p className="text-sm text-center text-muted-foreground w-full">
                     {footerData.copyright}
                   </p>

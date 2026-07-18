@@ -41,12 +41,12 @@ export function LeadersSection({ isActive, direction }: LeadersSectionProps) {
                   exit: { opacity: 0, y: -100, transition: { duration: 0.6 } },
                 }}
                 style={{ perspective: 1000 }}
-                className="font-heading text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight mb-6 md:mb-12 text-center bg-clip-text text-transparent bg-gradient-to-br from-foreground to-foreground/70"
+                className="font-heading text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight mb-4 sm:mb-6 md:mb-12 text-center bg-clip-text text-transparent bg-gradient-to-br from-foreground to-foreground/70"
               >
                 District Leaders
               </motion.h2>
 
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 md:gap-8 w-full mb-6 md:mb-12">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-6 md:gap-8 w-full mb-4 sm:mb-6 md:mb-12">
                 {currentLeadersData
                   .filter(
                     (leader) =>
@@ -78,7 +78,7 @@ export function LeadersSection({ isActive, direction }: LeadersSectionProps) {
                       style={{ perspective: 1000 }}
                       className="flex flex-col items-center group cursor-pointer"
                     >
-                      <div className="relative w-full aspect-[4/5] rounded-xl md:rounded-3xl overflow-hidden mb-3 md:mb-6 border border-white/10 shadow-2xl">
+                      <div className="relative w-[75%] sm:w-full aspect-[4/5] rounded-xl md:rounded-3xl overflow-hidden mb-2 sm:mb-3 md:mb-6 border border-white/10 shadow-2xl">
                         <div className="absolute inset-0 bg-gold/20 opacity-0 group-hover:opacity-100 mix-blend-overlay transition-opacity duration-500 z-10" />
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
