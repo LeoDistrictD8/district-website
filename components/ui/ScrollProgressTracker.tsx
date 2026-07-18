@@ -9,8 +9,8 @@ const sectionTitles = [
   "Impact",
   "Leaders",
   "Clubs",
-  "Projects",
-  "Connect"
+  // "Projects",
+  "Connect",
 ];
 
 interface ScrollProgressTrackerProps {
@@ -18,29 +18,25 @@ interface ScrollProgressTrackerProps {
   totalSections: number;
 }
 
-export function ScrollProgressTracker({ activeIndex, totalSections }: ScrollProgressTrackerProps) {
+export function ScrollProgressTracker({
+  activeIndex,
+  totalSections,
+}: ScrollProgressTrackerProps) {
   const progress = (activeIndex / (totalSections - 1)) * 100;
   const rotationAngle = (activeIndex / (totalSections - 1)) * 360;
-  
+
   const radius = 42;
   const circumference = 2 * Math.PI * radius;
   const strokeDashoffset = circumference - (progress / 100) * circumference;
-  
-  const itemHeight = 28;
+
+  const itemHeight = 32;
 
   return (
     <div className="fixed right-6 top-1/2 -translate-y-1/2 z-50 flex items-center gap-4 hidden md:flex drop-shadow-xl">
-      
       {/* Scrollable Horizontal Titles */}
-      <div className="relative w-32 h-[84px] overflow-hidden pointer-events-none fade-edges">
-        {/* We use a mask image to fade out the top and bottom if desired, or just rely on opacity */}
-        <div 
-          className="absolute inset-0 z-10 pointer-events-none" 
-          style={{
-            background: 'linear-gradient(to bottom, var(--background) 0%, transparent 20%, transparent 80%, var(--background) 100%)'
-          }}
-        />
-        
+      <div className="relative w-32 h-[96px] overflow-hidden pointer-events-none fade-edges">
+
+
         <motion.div
           animate={{ y: -(activeIndex * itemHeight) + itemHeight }}
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
@@ -52,7 +48,11 @@ export function ScrollProgressTracker({ activeIndex, totalSections }: ScrollProg
             // Only show adjacent items and the active one
             const isVisible = distance <= 1;
             const opacity = isActive ? 1 : isVisible ? 0.4 : 0;
-            const blur = isActive ? "blur(0px)" : isVisible ? "blur(2px)" : "blur(4px)";
+            const blur = isActive
+              ? "blur(0px)"
+              : isVisible
+                ? "blur(1px)"
+                : "blur(2px)";
             const scale = isActive ? 1 : 0.85;
 
             return (
@@ -60,9 +60,11 @@ export function ScrollProgressTracker({ activeIndex, totalSections }: ScrollProg
                 key={title}
                 animate={{ opacity, scale, filter: blur }}
                 transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-                className="h-[28px] flex items-center justify-end origin-right whitespace-nowrap"
+                className="h-[32px] flex items-center justify-end origin-right whitespace-nowrap"
               >
-                <span className={`uppercase tracking-widest text-[9px] font-bold ${isActive ? 'text-gold' : 'text-white'}`}>
+                <span
+                  className={`uppercase tracking-widest text-[9px] font-bold ${isActive ? "text-gold" : "text-white"}`}
+                >
                   {title}
                 </span>
               </motion.div>
@@ -80,21 +82,21 @@ export function ScrollProgressTracker({ activeIndex, totalSections }: ScrollProg
           className="absolute inset-0 w-full h-full text-white/20"
           viewBox="0 0 100 100"
         >
-          <circle 
-            cx="50" 
-            cy="50" 
-            r={radius} 
-            fill="none" 
-            stroke="currentColor" 
-            strokeWidth="1" 
-            strokeDasharray="4 6" 
+          <circle
+            cx="50"
+            cy="50"
+            r={radius}
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1"
+            strokeDasharray="4 6"
           />
           {/* A dot on the rotating ring to show the "dial" movement */}
-          <circle 
-            cx="50" 
-            cy="8" 
-            r="3" 
-            fill="#D4AF37" 
+          <circle
+            cx="50"
+            cy="8"
+            r="3"
+            fill="#D4AF37"
             className="drop-shadow-[0_0_4px_rgba(212,175,55,0.8)]"
           />
         </motion.svg>
@@ -114,11 +116,13 @@ export function ScrollProgressTracker({ activeIndex, totalSections }: ScrollProg
             strokeLinecap="round"
             strokeDasharray={circumference}
             strokeDashoffset={strokeDashoffset}
-            style={{ transition: "stroke-dashoffset 1.2s cubic-bezier(0.16, 1, 0.3, 1)" }}
+            style={{
+              transition:
+                "stroke-dashoffset 1.2s cubic-bezier(0.16, 1, 0.3, 1)",
+            }}
           />
         </svg>
       </div>
     </div>
   );
 }
-

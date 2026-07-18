@@ -1,10 +1,30 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Globe } from "@/components/ui/globe";
+import {
+  ScrollVelocityContainer,
+  ScrollVelocityRow,
+} from "@/components/ui/scroll-based-velocity";
 
 export function AnimatedBackground() {
   return (
     <div className="fixed inset-0 -z-50 overflow-hidden bg-background pointer-events-none">
+      <div className="absolute top-[10%] w-full opacity-5">
+        <ScrollVelocityContainer className="text-5xl font-black tracking-[-0.02em] md:text-7xl lg:text-9xl uppercase text-foreground/30">
+          <ScrollVelocityRow baseVelocity={2} direction={1}>
+            LEO DISTRICT 306 D8 &nbsp;•&nbsp;
+          </ScrollVelocityRow>
+          <ScrollVelocityRow baseVelocity={2} direction={-1}>
+            RISE TO LEAD &nbsp;•&nbsp;
+          </ScrollVelocityRow>
+        </ScrollVelocityContainer>
+      </div>
+
+      <div className="absolute inset-0 opacity-20 transition-opacity duration-1000">
+        <Globe className="top-auto -bottom-[10%] translate-y-1/4" />
+      </div>
+
       {/* Floating Gradient Orbs */}
       <motion.div
         animate={{
@@ -19,7 +39,7 @@ export function AnimatedBackground() {
         }}
         className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-gold/10 rounded-full blur-[120px]"
       />
-      
+
       <motion.div
         animate={{
           x: [0, -120, 0, 120, 0],

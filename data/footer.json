@@ -1,8 +1,5 @@
 {
-  "logos": [
-    "https://dummyimage.com/150x50/1a1a1a/D4AF37&text=LOGO+1",
-    "https://dummyimage.com/150x50/1a1a1a/D4AF37&text=LOGO+2"
-  ],
+  "logos": ["/images/logo/leo-logo.png", "/images/logo/lion-logo.png"],
   "quickLinks": {
     "title": "Quick Links",
     "links": [
@@ -32,12 +29,19 @@
   "socials": {
     "title": "Follow Us",
     "platforms": [
-      { "name": "Facebook", "url": "#" },
+      {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/p/Leo-District-306-D8-61577577827979/"
+      },
       { "name": "Twitter", "url": "#" },
-      { "name": "Instagram", "url": "#" },
-      { "name": "Linkedin", "url": "#" },
+      { "name": "Instagram", "url": "https://www.instagram.com/d8leos/" },
+      { "name": "Tiktok", "url": "https://www.tiktok.com/@leosofd8" },
+      {
+        "name": "Linkedin",
+        "url": "https://www.linkedin.com/company/leo-district-306-d8/"
+      },
       { "name": "Youtube", "url": "#" }
     ]
   },
-  "copyright": "© 2026 LEO District 306 D8. All rights reserved."
+  "copyright": "© 2026 Leo District 306 D8. All rights reserved."
 }

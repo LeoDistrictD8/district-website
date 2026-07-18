@@ -7,21 +7,21 @@
       "name": "Coastal Cleanup 2026",
       "description": "A massive district-wide initiative to clean up the western coastlines. Over 500 volunteers participated to collect plastic waste and restore the natural habitat of endangered sea turtles and local wildlife.",
       "date": "July 12, 2026",
-      "image": "https://dummyimage.com/600x400/1a1a1a/D4AF37&text=Coastal+Cleanup"
+      "image": ""
     },
     {
       "id": 2,
       "name": "Youth Leadership Summit",
       "description": "An intensive 3-day workshop focused on developing the next generation of community leaders. Topics included public speaking, project management, and sustainable development.",
       "date": "June 25, 2026",
-      "image": "https://dummyimage.com/600x400/1a1a1a/D4AF37&text=Leadership+Summit"
+      "image": ""
     },
     {
       "id": 3,
       "name": "Vision for All",
       "description": "A free eye-care clinic setup in rural areas providing free checkups and spectacles to over 1000 elderly citizens who lacked access to basic medical facilities.",
       "date": "May 10, 2026",
-      "image": "https://dummyimage.com/600x400/1a1a1a/D4AF37&text=Vision+for+All"
+      "image": ""
     }
   ],
   "buttonText": "Explore More Projects"

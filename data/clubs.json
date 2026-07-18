@@ -1,17 +1,105 @@
 {
-  "title": "Leo Clubs in the District",
-  "clubs": [
-    { "name": "Leo Club of Alpha Region 1", "president": "ABC 1" },
-    { "name": "Leo Club of Alpha Region 2", "president": "ABC 2" },
-    { "name": "Leo Club of Alpha Region 3", "president": "ABC 3" },
-    { "name": "Leo Club of Alpha Region 4", "president": "ABC 4" },
-    { "name": "Leo Club of Alpha Region 5", "president": "ABC 5" },
-    { "name": "Leo Club of Alpha Region 6", "president": "ABC 6" },
-    { "name": "Leo Club of Alpha Region 7", "president": "ABC 7" },
-    { "name": "Leo Club of Alpha Region 8", "president": "ABC 8" },
-    { "name": "Leo Club of Alpha Region 9", "president": "ABC 9" },
-    { "name": "Leo Club of Alpha Region 10", "president": "ABC 10" },
-    { "name": "Leo Club of Alpha Region 11", "president": "ABC 11" },
-    { "name": "Leo Club of Alpha Region 12", "president": "ABC 12" }
+  "title": "Clubs",
+  "regions": [
+    {
+      "name": "Region A",
+      "director": "Leo Visith Rathnayake",
+      "zones": [
+        {
+          "name": "Zone A1",
+          "director": "Leo Bisandi Mansari",
+          "clubs": [
+            {
+              "name": "Leo Club of Baddegama",
+              "president": "Leo Ishini"
+            },
+            {
+              "name": "Leo Club of Unawatuna Diamond Stars",
+              "president": "Leo Chamathka Mudalige"
+            },
+            {
+              "name": "Leo Club of Galle Fort",
+              "president": "Leo Thinuli Pudamya"
+            },
+            {
+              "name": "Leo Club of St Servatius College Matara",
+              "president": "Leo Senuda"
+            }
+          ]
+        },
+        {
+          "name": "Zone A2",
+          "director": "Leo Janiru Induwara",
+          "clubs": [
+            {
+              "name": "Leo Club of University of Ruhuna Millenium",
+              "president": "Leo Thiwanka Fernando"
+            },
+            {
+              "name": "Leo Club of Sujatha Vidyalaya Matara",
+              "president": "Leo Manji"
+            },
+            {
+              "name": "Leo Club of Southern Metro",
+              "president": "Leo Minindu"
+            },
+            {
+              "name": "Leo Club of Mahinda College II",
+              "president": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Region B",
+      "director": "Leo Nipun Kariyawasam",
+      "zones": [
+        {
+          "name": "Zone B1",
+          "director": "Leo Pramuka Wageesha",
+          "clubs": [
+            {
+              "name": "Leo Club of Mathara Marians",
+              "president": "Leo Dahami Vihanga"
+            },
+            {
+              "name": "Leo Club of Centennial Richmond College",
+              "president": "Leo Thilitha"
+            },
+            {
+              "name": "Leo Club of Galle",
+              "president": "Leo Sajani Dilsara"
+            },
+            {
+              "name": "Leo Club of Kataragama Bogahapelessa",
+              "president": "Leo Chathushika"
+            }
+          ]
+        },
+        {
+          "name": "Zone B2",
+          "director": "Leo Lahiru Jayasanka",
+          "clubs": [
+            {
+              "name": "Leo Club of Matara Nilwala II",
+              "president": "Leo Ashen Thathsara"
+            },
+            {
+              "name": "Leo Club of Rahula College",
+              "president": "Leo Sasindu Lokuliyanage"
+            },
+            {
+              "name": "Leo Club of Deniyaya",
+              "president": "Leo Ayomal Weerasinghe"
+            },
+            {
+              "name": "Leo Club of St Thomas College Matara",
+              "president": "Leo Sanija Palliyaguruge"
+            }
+          ]
+        }
+      ]
+    }
   ]
 }

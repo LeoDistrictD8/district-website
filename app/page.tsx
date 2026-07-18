@@ -2,19 +2,19 @@
 
 import { useState } from "react";
 import { Navbar } from "@/components/layout/Navbar";
-import { HeroSection } from "@/components/sections/HeroSection";
-import { AboutSection } from "@/components/sections/AboutSection";
-import { WhatWeDoSection } from "@/components/sections/WhatWeDoSection";
-import { StatsSection } from "@/components/sections/StatsSection";
-import { LeadersSection } from "@/components/sections/LeadersSection";
-import { ClubsSection } from "@/components/sections/ClubsSection";
-import { ProjectsSection } from "@/components/sections/ProjectsSection";
-import { FooterSection } from "@/components/sections/FooterSection";
+import { HeroSection } from "@/app/_components/sections/HeroSection";
+import { AboutSection } from "@/app/_components/sections/AboutSection";
+import { WhatWeDoSection } from "@/app/_components/sections/WhatWeDoSection";
+import { StatsSection } from "@/app/_components/sections/StatsSection";
+import { LeadersSection } from "@/app/_components/sections/LeadersSection";
+import { ClubsSection } from "@/app/_components/sections/ClubsSection";
+import { ProjectsSection } from "@/app/_components/sections/ProjectsSection";
+import { FooterSection } from "@/app/_components/sections/FooterSection";
 import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 import { ScrollProgressTracker } from "@/components/ui/ScrollProgressTracker";
 import { useScrollJacking } from "@/hooks/useScrollJacking";
 
-const TOTAL_SECTIONS = 8;
+const TOTAL_SECTIONS = 7;
 
 export default function Home() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -25,7 +25,7 @@ export default function Home() {
       let nextIndex = prev + scrollDir;
       if (nextIndex < 0) nextIndex = 0;
       if (nextIndex >= TOTAL_SECTIONS) nextIndex = TOTAL_SECTIONS - 1;
-      
+
       if (nextIndex !== prev) {
         setDirection(scrollDir);
       }
@@ -36,13 +36,13 @@ export default function Home() {
   return (
     <main className="fixed inset-0 overflow-hidden bg-background text-foreground">
       <AnimatedBackground />
-      
-      <Navbar 
-        activeIndex={activeIndex} 
+
+      <Navbar
+        activeIndex={activeIndex}
         setActiveIndex={(idx) => {
           setDirection(idx > activeIndex ? 1 : -1);
           setActiveIndex(idx);
-        }} 
+        }}
       />
 
       {/* Sections are stacked on top of each other. 
@@ -55,11 +55,14 @@ export default function Home() {
         <StatsSection isActive={activeIndex === 3} direction={direction} />
         <LeadersSection isActive={activeIndex === 4} direction={direction} />
         <ClubsSection isActive={activeIndex === 5} direction={direction} />
-        <ProjectsSection isActive={activeIndex === 6} direction={direction} />
-        <FooterSection isActive={activeIndex === 7} direction={direction} />
+        {/* <ProjectsSection isActive={activeIndex === 6} direction={direction} /> */}
+        <FooterSection isActive={activeIndex === 6} direction={direction} />
       </div>
 
-      <ScrollProgressTracker activeIndex={activeIndex} totalSections={TOTAL_SECTIONS} />
+      <ScrollProgressTracker
+        activeIndex={activeIndex}
+        totalSections={TOTAL_SECTIONS}
+      />
     </main>
   );
 }

@@ -1,6 +1,6 @@
 [
   { "id": 1, "value": "1000+", "label": "Leos" },
-  { "id": 2, "value": "18", "label": "LEO Clubs" },
-  { "id": 3, "value": "3", "label": "Regions" },
+  { "id": 2, "value": "16", "label": "LEO Clubs" },
+  { "id": 3, "value": "2", "label": "Regions" },
   { "id": 4, "value": "200+", "label": "Projects Completed" }
 ]

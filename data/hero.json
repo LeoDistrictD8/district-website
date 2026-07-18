@@ -6,11 +6,13 @@
   "buttons": [
     {
       "text": "Explore More",
-      "variant": "default"
+      "variant": "default",
+      "link": "/about"
     },
     {
       "text": "Our Leaders",
-      "variant": "outline"
+      "variant": "outline",
+      "link": "/leaders/current"
     }
   ],
   "scrollText": "Scroll"

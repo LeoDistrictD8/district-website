@@ -1,0 +1,163 @@
+[
+  {
+    "imageUrl": "/images/leaders/DP_Lohan Devasurendra.jpeg",
+    "name": "Leo Lohan Devasurendra",
+    "position": "District President",
+    "positionCategory": "District Executive Officers",
+    "positionPriority": 1
+  },
+  {
+    "imageUrl": "/images/leaders/IPDP_Anushka Shaminda.png",
+    "name": "Leo Lion Anushka Shaminda",
+    "position": "Immediate Past District President",
+    "positionCategory": "District Executive Officers",
+    "positionPriority": 2
+  },
+  {
+    "imageUrl": "/images/leaders/DVP_Navindu Seran.jpg",
+    "name": "Leo Navindu Seran",
+    "position": "District Vice President",
+    "positionCategory": "District Executive Officers",
+    "positionPriority": 3
+  },
+  {
+    "imageUrl": "/images/common/placeholder-men.jpg",
+    "name": "Lion Nishantha Rumesh Gamage MAF",
+    "position": "District Leo Chairperson",
+    "positionCategory": "District Executive Officers",
+    "positionPriority": 4
+  },
+  {
+    "imageUrl": "/images/leaders/DS_Peshani Mendis.jpg",
+    "name": "Leo Lion Peshani Mendis",
+    "position": "District Secretary",
+    "positionCategory": "Key Council Officers",
+    "positionPriority": 5
+  },
+  {
+    "imageUrl": "/images/leaders/DT_Mesith Rathnayake.png",
+    "name": "Leo Mesith Rathnayake",
+    "position": "District Treasurer",
+    "positionCategory": "Key Council Officers",
+    "positionPriority": 6
+  },
+  {
+    "imageUrl": "/images/leaders/MC_Peenaka Wedamulla.jpg",
+    "name": "Leo Peenaka Wedamulla",
+    "position": "Membership Chairperson",
+    "positionCategory": "Key Council Officers",
+    "positionPriority": 7
+  },
+  {
+    "imageUrl": "/images/leaders/ADS_Nidula Chithwara.png",
+    "name": "Leo Nidula Chithwara",
+    "position": "Assistant District Secretary",
+    "positionCategory": "Key Council Officers",
+    "positionPriority": 8
+  },
+  {
+    "imageUrl": "/images/leaders/ADT_Kasuni Shenali.jpg",
+    "name": "Leo Lion Kasuni Shenali",
+    "position": "Assistant District Treasurer",
+    "positionCategory": "Key Council Officers",
+    "positionPriority": 9
+  },
+  {
+    "imageUrl": "/images/leaders/CCDC_Narmada Guruge.png",
+    "name": "Leo Lion Narmada Guruge",
+    "position": "Chief Coordinator - District Contest",
+    "positionCategory": "Chief Coordinators",
+    "positionPriority": 10
+  },
+  {
+    "imageUrl": "/images/leaders/CCR_Sathira Wellappuli.jpg",
+    "name": "Leo Sathira Wellappuli",
+    "position": "Chief Coordinator - Region",
+    "positionCategory": "Chief Coordinators",
+    "positionPriority": 11
+  },
+  {
+    "imageUrl": "/images/leaders/RDRA_Visith Rathnayake.jpeg",
+    "name": "Leo Visith Rathnayake",
+    "position": "Region Director - Region A",
+    "positionCategory": "Region and Zone Directors",
+    "positionPriority": 12
+  },
+  {
+    "imageUrl": "/images/leaders/RDRB_Nipun Kariyawasam.jpg",
+    "name": "Leo Nipun Kariyawasam",
+    "position": "Region Director - Region B",
+    "positionCategory": "Region and Zone Directors",
+    "positionPriority": 13
+  },
+  {
+    "imageUrl": "/images/leaders/ZDZA1_Bisandi Mansari.jpg",
+    "name": "Leo Bisandi Mansari",
+    "position": "Zone Director - Zone A1",
+    "positionCategory": "Region and Zone Directors",
+    "positionPriority": 14
+  },
+  {
+    "imageUrl": "/images/leaders/ZDZB1_Pramuka Wageesha.png",
+    "name": "Leo Pramuka Wageesha",
+    "position": "Zone Director - Zone B1",
+    "positionCategory": "Region and Zone Directors",
+    "positionPriority": 15
+  },
+  {
+    "imageUrl": "/images/leaders/ZDZB2_Lahiru Jayasanka.jpeg",
+    "name": "Leo Lahiru Jayasanka",
+    "position": "Zone Director - Zone B2",
+    "positionCategory": "Region and Zone Directors",
+    "positionPriority": 16
+  },
+  {
+    "imageUrl": "/images/leaders/ZDZA2_Janiru Induwara.png",
+    "name": "Leo Janiru Induwara",
+    "position": "Zone Director - Zone A2",
+    "positionCategory": "Region and Zone Directors",
+    "positionPriority": 17
+  },
+  {
+    "imageUrl": "/images/leaders/DDPR_Rachitha Chandeepa.png",
+    "name": "Leo Rachitha Chandeepa",
+    "position": "District Director - PR",
+    "positionCategory": "District Directors",
+    "positionPriority": 18
+  },
+  {
+    "imageUrl": "/images/leaders/DDM_Chathurangi Weerasekara.jpeg",
+    "name": "Leo Chathurangi Weerasekara",
+    "position": "District Director - Membership",
+    "positionCategory": "District Directors",
+    "positionPriority": 19
+  },
+  {
+    "imageUrl": "/images/leaders/DDA_Lewmini Edirisinghe.png",
+    "name": "Leo Lewmini Edirisinghe",
+    "position": "District Director - Administration",
+    "positionCategory": "District Directors",
+    "positionPriority": 20
+  },
+  {
+    "imageUrl": "/images/leaders/DDSF_Osura Abeygunawardena.jpeg",
+    "name": "Leo Osura Abeygunawardena",
+    "position": "District Director - Service & Fellowship",
+    "positionCategory": "District Directors",
+    "positionPriority": 21
+  },
+  {
+    "imageUrl": "/images/leaders/DDE_Kasuni Samaranayake.png",
+    "name": "Leo Kasuni Samaranayake",
+    "position": "District Director - Editorial",
+    "positionCategory": "District Directors",
+    "positionPriority": 22
+  },
+  {
+    "imageUrl": "/images/leaders/DDS_Udana Sankalpa.png",
+    "name": "Leo Udana Sankalpa",
+    "position": "District Director - Sports",
+    "positionCategory": "District Directors",
+    "positionPriority": 23
+  }
+]

@@ -1,9 +1,0 @@
-{
-  "title": "Meet Our Leaders",
-  "leaders": [
-    { "id": 1, "name": "John Doe", "title": "District President", "image": "https://dummyimage.com/400x500/1a1a1a/D4AF37&text=President" },
-    { "id": 2, "name": "Jane Smith", "title": "District Vice President", "image": "https://dummyimage.com/400x500/1a1a1a/D4AF37&text=Vice+President" },
-    { "id": 3, "name": "Mike Johnson", "title": "District Secretary", "image": "https://dummyimage.com/400x500/1a1a1a/D4AF37&text=Secretary" }
-  ],
-  "buttonText": "Explore More Leaders"
-}
