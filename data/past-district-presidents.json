@@ -1,11 +1,38 @@
 [
   {
-    "name": "Leo Anushka Shaminda",
-    "leosticYear": "2025/2026",
+    "name": "Leo Dilitha Ranjuna FLM",
+    "leosticYear": "",
     "logoUrl": "",
-    "leoClub": "Leo Club of Baddegama",
+    "leoClub": "Leo Club of Matara Nilwala",
     "motto": "",
-    "photoUrl": "/images/pdp/PDP_25_26_Anushka Shaminda.png",
+    "photoUrl": "/images/pdp/PDP_Dilitha.jpeg",
+    "gender": "male"
+  },
+  {
+    "name": "Leo Lion Navod Kiriwaththuduwa",
+    "leosticYear": "",
+    "logoUrl": "",
+    "leoClub": "Lions Club of Polgasowita",
+    "motto": "",
+    "photoUrl": "/images/pdp/PDP_Navod.jpeg",
+    "gender": "male"
+  },
+  {
+    "name": "Leo Lion Dilshan Peries",
+    "leosticYear": "",
+    "logoUrl": "",
+    "leoClub": "Lions Club of Moratuwa",
+    "motto": "",
+    "photoUrl": "/images/pdp/PDP_Dilshan.jpeg",
+    "gender": "male"
+  },
+  {
+    "name": "Leo Lion Akila Gunarathne",
+    "leosticYear": "",
+    "logoUrl": "",
+    "leoClub": "Leo Club of Moratuwa",
+    "motto": "",
+    "photoUrl": "/images/pdp/PDP_Akila.jpeg",
     "gender": "male"
   }
 ]

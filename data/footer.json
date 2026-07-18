@@ -10,13 +10,16 @@
       { "label": "Resources", "url": "/resources" }
     ]
   },
-  "contact": {
-    "title": "Contact Info",
-    "info": [
-      "123 District Road",
-      "City, Country 12345",
-      "info@leodistrict306d8.org",
-      "+1 234 567 8900"
+  "resources": {
+    "title": "Resources",
+    "links": [
+      { "label": "District Logo", "url": "/resources#district-logo" },
+      { "label": "Leo Logo", "url": "/resources#leo-logo" },
+      {
+        "label": "Leos of Sri Lanka & Maldives Logo",
+        "url": "/resources#lslm-logo"
+      },
+      { "label": "Lions Logo", "url": "/resources#lions-logo" }
     ]
   },
   "socials": {
@@ -26,14 +29,13 @@
         "name": "Facebook",
         "url": "https://www.facebook.com/p/Leo-District-306-D8-61577577827979/"
       },
-      { "name": "Twitter", "url": "#" },
       { "name": "Instagram", "url": "https://www.instagram.com/d8leos/" },
       { "name": "Tiktok", "url": "https://www.tiktok.com/@leosofd8" },
       {
         "name": "Linkedin",
         "url": "https://www.linkedin.com/company/leo-district-306-d8/"
       },
-      { "name": "Youtube", "url": "#" }
+      { "name": "Youtube", "url": "https://www.youtube.com/@LEODISTRICT306D8" }
     ]
   },
   "copyright": "© 2026 Leo District 306 D8. All rights reserved."
