@@ -1,0 +1,43 @@
+{
+  "logos": [
+    "https://dummyimage.com/150x50/1a1a1a/D4AF37&text=LOGO+1",
+    "https://dummyimage.com/150x50/1a1a1a/D4AF37&text=LOGO+2"
+  ],
+  "quickLinks": {
+    "title": "Quick Links",
+    "links": [
+      { "label": "Home", "url": "#" },
+      { "label": "About Us", "url": "#" },
+      { "label": "Clubs", "url": "#" },
+      { "label": "Events", "url": "#" }
+    ]
+  },
+  "resources": {
+    "title": "Resources",
+    "links": [
+      { "label": "Gallery", "url": "#" },
+      { "label": "Downloads", "url": "#" },
+      { "label": "Contact", "url": "#" }
+    ]
+  },
+  "contact": {
+    "title": "Contact Info",
+    "info": [
+      "123 District Road",
+      "City, Country 12345",
+      "info@leodistrict306d8.org",
+      "+1 234 567 8900"
+    ]
+  },
+  "socials": {
+    "title": "Follow Us",
+    "platforms": [
+      { "name": "Facebook", "url": "#" },
+      { "name": "Twitter", "url": "#" },
+      { "name": "Instagram", "url": "#" },
+      { "name": "Linkedin", "url": "#" },
+      { "name": "Youtube", "url": "#" }
+    ]
+  },
+  "copyright": "© 2026 LEO District 306 D8. All rights reserved."
+}

@@ -1,0 +1,17 @@
+{
+  "badge": "Serving with Excellence",
+  "titlePart1": "Welcome to",
+  "titlePart2": "Leo District 306 D8",
+  "description": "Empowering youth, serving the community, and developing leadership skills across our district. Join us in making a real, lasting difference today.",
+  "buttons": [
+    {
+      "text": "Explore More",
+      "variant": "default"
+    },
+    {
+      "text": "Our Leaders",
+      "variant": "outline"
+    }
+  ],
+  "scrollText": "Scroll"
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Leo Clubs in the District",
+  "clubs": [
+    { "name": "Leo Club of Alpha Region 1", "president": "ABC 1" },
+    { "name": "Leo Club of Alpha Region 2", "president": "ABC 2" },
+    { "name": "Leo Club of Alpha Region 3", "president": "ABC 3" },
+    { "name": "Leo Club of Alpha Region 4", "president": "ABC 4" },
+    { "name": "Leo Club of Alpha Region 5", "president": "ABC 5" },
+    { "name": "Leo Club of Alpha Region 6", "president": "ABC 6" },
+    { "name": "Leo Club of Alpha Region 7", "president": "ABC 7" },
+    { "name": "Leo Club of Alpha Region 8", "president": "ABC 8" },
+    { "name": "Leo Club of Alpha Region 9", "president": "ABC 9" },
+    { "name": "Leo Club of Alpha Region 10", "president": "ABC 10" },
+    { "name": "Leo Club of Alpha Region 11", "president": "ABC 11" },
+    { "name": "Leo Club of Alpha Region 12", "president": "ABC 12" }
+  ]
+}
