@@ -10,7 +10,7 @@ interface AboutSectionProps {
 
 export function AboutSection({ isActive, direction }: AboutSectionProps) {
   return (
-    <section className="absolute inset-0 flex items-center justify-center pt-48 md:pt-24 overflow-hidden pointer-events-none">
+    <section className="absolute inset-0 flex items-center justify-center md:pt-24 overflow-hidden pointer-events-none">
       <div
         className={`container px-4 md:px-6 flex flex-col items-center justify-center h-full max-w-6xl z-10 ${isActive ? "pointer-events-auto" : "pointer-events-none"}`}
       >
@@ -38,7 +38,7 @@ export function AboutSection({ isActive, direction }: AboutSectionProps) {
                   },
                   exit: { opacity: 0, y: -50, transition: { duration: 0.5 } },
                 }}
-                className="font-heading text-4xl md:text-5xl tracking-tight mb-6 md:mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-gold to-yellow-600"
+                className="font-heading text-4xl md:text-5xl tracking-tight mb-2 text-center bg-clip-text text-transparent bg-gradient-to-r from-gold to-yellow-600"
               >
                 {aboutData.title}
               </motion.h2>

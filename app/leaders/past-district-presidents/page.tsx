@@ -44,6 +44,7 @@ function PresidentCard({ president, index, priority }: { president: PastPresiden
                 src={president.logoUrl} 
                 alt="Logo" 
                 fill 
+                sizes="48px"
                 className="object-cover" 
               />
             </div>
