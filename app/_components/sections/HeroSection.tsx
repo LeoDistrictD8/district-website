@@ -147,7 +147,7 @@ export function HeroSection({ isActive, direction }: HeroSectionProps) {
                 {heroData.buttons.map((button, index) => (
                   <Button
                     key={index}
-                    asChild
+                    render={<Link href={button.link} />}
                     size="lg"
                     variant={button.variant as any}
                     className={
@@ -156,7 +156,7 @@ export function HeroSection({ isActive, direction }: HeroSectionProps) {
                         : "h-12 px-8 text-base shadow-[0_0_20px_rgba(212,175,55,0.3)] transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(212,175,55,0.5)]"
                     }
                   >
-                    <Link href={button.link}>{button.text}</Link>
+                    {button.text}
                   </Button>
                 ))}
               </motion.div>
