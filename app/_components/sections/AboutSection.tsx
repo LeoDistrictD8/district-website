@@ -38,7 +38,7 @@ export function AboutSection({ isActive, direction }: AboutSectionProps) {
                   },
                   exit: { opacity: 0, y: -50, transition: { duration: 0.5 } },
                 }}
-                className="font-heading text-4xl md:text-5xl tracking-tight mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-gold to-yellow-600"
+                className="font-heading text-4xl md:text-5xl tracking-tight mb-6 md:mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-gold to-yellow-600"
               >
                 {aboutData.title}
               </motion.h2>
@@ -96,7 +96,7 @@ export function AboutSection({ isActive, direction }: AboutSectionProps) {
                   }}
                   className="text-center px-4"
                 >
-                  <div className="flex flex-col p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md shadow-xl hover:bg-white/10 transition-colors group relative overflow-hidden text-left">
+                  <div className="flex flex-col p-6 md:p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md shadow-xl hover:bg-white/10 transition-colors group relative overflow-hidden text-left">
                     <div className="absolute inset-0 bg-gradient-to-br from-gold/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                     <p className="text-sm md:text-base text-muted-foreground leading-relaxed relative z-10">
                       {aboutData.description}
@@ -132,7 +132,7 @@ export function AboutSection({ isActive, direction }: AboutSectionProps) {
                   <img
                     src={aboutData.logo}
                     alt="District Logo"
-                    className="w-[250px] h-[250px] md:w-[500px] md:h-[500px] object-contain drop-shadow-[0_0_30px_rgba(212,175,55,0.2)]"
+                    className="w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[500px] md:h-[500px] object-contain drop-shadow-[0_0_30px_rgba(212,175,55,0.2)]"
                   />
                 </motion.div>
               </div>

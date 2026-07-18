@@ -183,7 +183,7 @@ export function FooterSection({ isActive, direction }: FooterSectionProps) {
                   </div>
 
                   {/* Resources Column */}
-                  <div className="col-span-1">
+                  {/* <div className="col-span-1">
                     <h4 className="text-gold font-semibold mb-6 uppercase tracking-wider text-sm">
                       {footerData.resources.title}
                     </h4>
@@ -199,7 +199,7 @@ export function FooterSection({ isActive, direction }: FooterSectionProps) {
                         </li>
                       ))}
                     </ul>
-                  </div>
+                  </div> */}
 
                   {/* Contact Info Column */}
                   <div className="col-span-2 md:col-span-1">

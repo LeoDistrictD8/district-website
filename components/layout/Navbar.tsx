@@ -28,6 +28,7 @@ const navLinks: NavItem[] = [
     ],
   },
   { name: "Clubs", href: "/clubs" },
+  { name: "Resources", href: "/resources" },
   // { name: "Projects", href: "/projects" },
   // { name: "Downloads", href: "/downloads" },
   // { name: "Contact", href: "/contact" },
@@ -41,7 +42,9 @@ interface NavbarProps {
 export function Navbar({ activeIndex = 0, setActiveIndex }: NavbarProps) {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [expandedMobileItem, setExpandedMobileItem] = useState<string | null>(null);
+  const [expandedMobileItem, setExpandedMobileItem] = useState<string | null>(
+    null,
+  );
 
   const handleClick = (item: NavItem) => {
     if (item.index !== undefined && setActiveIndex) {
@@ -55,7 +58,7 @@ export function Navbar({ activeIndex = 0, setActiveIndex }: NavbarProps) {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4"
+      className="fixed top-2 md:top-4 left-0 right-0 z-50 flex justify-center px-4"
     >
       <nav className="flex items-center justify-between w-full max-w-5xl px-4 py-2 md:px-6 md:py-3 bg-grey-dark/80 backdrop-blur-md border border-white/10 rounded-full shadow-2xl">
         <Link
@@ -168,7 +171,7 @@ export function Navbar({ activeIndex = 0, setActiveIndex }: NavbarProps) {
                     <button
                       onClick={() =>
                         setExpandedMobileItem(
-                          expandedMobileItem === link.name ? null : link.name
+                          expandedMobileItem === link.name ? null : link.name,
                         )
                       }
                       className="flex items-center justify-between text-base font-medium text-foreground/80 hover:text-gold py-2 w-full text-left"
@@ -178,7 +181,7 @@ export function Navbar({ activeIndex = 0, setActiveIndex }: NavbarProps) {
                         <ChevronDown
                           className={cn(
                             "w-5 h-5 transition-transform",
-                            expandedMobileItem === link.name && "rotate-180"
+                            expandedMobileItem === link.name && "rotate-180",
                           )}
                         />
                       )}

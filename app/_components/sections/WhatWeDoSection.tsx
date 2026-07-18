@@ -39,7 +39,7 @@ export function WhatWeDoSection({ isActive, direction }: WhatWeDoSectionProps) {
                   exit: { opacity: 0, y: -100, transition: { duration: 0.6 } },
                 }}
                 style={{ perspective: 1000 }}
-                className="font-heading text-5xl md:text-6xl font-bold tracking-tight mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70"
+                className="font-heading text-5xl md:text-6xl font-bold tracking-tight mb-8 md:mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70"
               >
                 {whatWeDoData.title}
               </motion.h2>

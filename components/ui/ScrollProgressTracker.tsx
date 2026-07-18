@@ -32,11 +32,9 @@ export function ScrollProgressTracker({
   const itemHeight = 32;
 
   return (
-    <div className="fixed right-6 top-1/2 -translate-y-1/2 z-50 flex items-center gap-4 hidden md:flex drop-shadow-xl">
+    <div className="fixed right-6 top-1/2 -translate-y-1/2 z-50 flex items-center gap-4 hidden lg:flex drop-shadow-xl">
       {/* Scrollable Horizontal Titles */}
       <div className="relative w-32 h-[96px] overflow-hidden pointer-events-none fade-edges">
-
-
         <motion.div
           animate={{ y: -(activeIndex * itemHeight) + itemHeight }}
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}

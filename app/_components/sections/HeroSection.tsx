@@ -118,7 +118,7 @@ export function HeroSection({ isActive, direction }: HeroSectionProps) {
                   },
                 }}
                 style={{ perspective: 1000 }}
-                className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl leading-relaxed"
+                className="text-md md:text-lg text-muted-foreground mb-10 max-w-2xl leading-relaxed"
               >
                 {heroData.description}
               </motion.p>
@@ -173,22 +173,22 @@ export function HeroSection({ isActive, direction }: HeroSectionProps) {
                   },
                   exit: { opacity: 0, y: 50, transition: { duration: 0.5 } },
                 }}
-                className="hidden md:flex fixed bottom-12 left-1/2 -translate-x-1/2 flex-col items-center gap-3 pointer-events-none"
+                className="hidden lg:flex fixed bottom-8 left-1/2 -translate-x-1/2 flex-col items-center gap-2 pointer-events-none"
               >
-                <span className="text-[10px] uppercase tracking-[0.3em] text-white/50 font-medium">
-                  {heroData.scrollText}
-                </span>
-                <div className="w-[24px] h-[40px] rounded-full border border-white/20 flex justify-center p-1">
+                <div className="w-[20px] h-[32px] rounded-full border border-white/20 flex justify-center p-1">
                   <motion.div
-                    animate={{ y: [0, 16, 0], opacity: [0.5, 1, 0.5] }}
+                    animate={{ y: [0, 12, 0], opacity: [0.5, 1, 0.5] }}
                     transition={{
                       duration: 1.5,
                       repeat: Infinity,
                       ease: "easeInOut",
                     }}
-                    className="w-1 h-2 bg-gold rounded-full"
+                    className="w-[3px] h-1.5 bg-gold rounded-full"
                   />
                 </div>
+                <span className="text-[8px] uppercase tracking-[0.3em] text-white/50 font-medium">
+                  {heroData.scrollText}
+                </span>
               </motion.div>
             </motion.div>
           )}

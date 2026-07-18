@@ -111,7 +111,7 @@ const Tiktok = (props: React.SVGProps<SVGSVGElement>) => (
 export function Footer() {
   return (
     <footer className="w-full bg-background border-t border-white/10 mt-auto">
-      <div className="w-full bg-white/5 py-12 px-6 md:px-12 backdrop-blur-md">
+      <div className="w-full bg-white/5 py-6 md:py-12 px-6 md:px-12 backdrop-blur-md">
         <div className="container mx-auto max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 mb-6 md:mb-12">
             {/* Logos Column */}
@@ -146,7 +146,7 @@ export function Footer() {
             </div>
 
             {/* Resources Column */}
-            <div>
+            {/* <div>
               <h4 className="text-gold font-semibold mb-6 uppercase tracking-wider text-sm">
                 {footerData.resources.title}
               </h4>
@@ -162,7 +162,7 @@ export function Footer() {
                   </li>
                 ))}
               </ul>
-            </div>
+            </div> */}
 
             {/* Contact Info Column */}
             <div>

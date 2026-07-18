@@ -19,9 +19,9 @@ export default function AboutPage() {
       <AnimatedBackground />
       <Navbar />
 
-      <div className="relative z-10 flex-grow pt-40 pb-24 w-full">
+      <div className="relative z-10 flex-grow pt-24 md:pt-40 pb-12 md:pb-24 w-full">
         {/* Section 1: Hero */}
-        <section className="container mx-auto px-6 max-w-6xl mb-32">
+        <section className="container mx-auto px-6 max-w-6xl mb-12 md:mb-32">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -39,7 +39,7 @@ export default function AboutPage() {
         </section>
 
         {/* Section 2: Mission & Vision */}
-        <section className="container mx-auto px-6 max-w-6xl mb-32">
+        <section className="container mx-auto px-6 max-w-6xl mb-12 md:mb-32">
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -78,7 +78,7 @@ export default function AboutPage() {
         </section>
 
         {/* Section 3: Key Achievements */}
-        <section className="container mx-auto px-6 max-w-6xl mb-32">
+        <section className="container mx-auto px-6 max-w-6xl mb-12 md:mb-32">
           <div className="text-center mb-16">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -209,7 +209,7 @@ export default function AboutPage() {
         </section>
 
         {/* Section 5: Milestones */}
-        <section className="container mx-auto px-6 max-w-4xl mb-24">
+        <section className="container mx-auto px-6 max-w-4xl mb-12 md:mb-24">
           <div className="text-center mb-16">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}

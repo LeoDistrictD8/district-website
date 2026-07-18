@@ -3,18 +3,11 @@
   "quickLinks": {
     "title": "Quick Links",
     "links": [
-      { "label": "Home", "url": "#" },
-      { "label": "About Us", "url": "#" },
-      { "label": "Clubs", "url": "#" },
-      { "label": "Events", "url": "#" }
-    ]
-  },
-  "resources": {
-    "title": "Resources",
-    "links": [
-      { "label": "Gallery", "url": "#" },
-      { "label": "Downloads", "url": "#" },
-      { "label": "Contact", "url": "#" }
+      { "label": "Home", "url": "/" },
+      { "label": "About", "url": "/about" },
+      { "label": "Leaders", "url": "/leaders/current" },
+      { "label": "Clubs", "url": "/clubs" },
+      { "label": "Resources", "url": "/resources" }
     ]
   },
   "contact": {
