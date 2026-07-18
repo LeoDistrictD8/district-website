@@ -10,7 +10,7 @@ interface AboutSectionProps {
 
 export function AboutSection({ isActive, direction }: AboutSectionProps) {
   return (
-    <section className="absolute inset-0 flex items-center justify-center pt-24 overflow-hidden pointer-events-none">
+    <section className="absolute inset-0 flex items-center justify-center pt-48 md:pt-24 overflow-hidden pointer-events-none">
       <div
         className={`container px-4 md:px-6 flex flex-col items-center justify-center h-full max-w-6xl z-10 ${isActive ? "pointer-events-auto" : "pointer-events-none"}`}
       >
@@ -132,7 +132,7 @@ export function AboutSection({ isActive, direction }: AboutSectionProps) {
                   <img
                     src={aboutData.logo}
                     alt="District Logo"
-                    className="w-[500px] h-[500px] object-contain drop-shadow-[0_0_30px_rgba(212,175,55,0.2)]"
+                    className="w-[300px] h-[300px] md:w-[500px] md:h-[500px] object-contain drop-shadow-[0_0_30px_rgba(212,175,55,0.2)]"
                   />
                 </motion.div>
               </div>

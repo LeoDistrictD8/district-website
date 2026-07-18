@@ -148,6 +148,7 @@ export function HeroSection({ isActive, direction }: HeroSectionProps) {
                   <Button
                     key={index}
                     render={<Link href={button.link} />}
+                    nativeButton={false}
                     size="lg"
                     variant={button.variant as any}
                     className={

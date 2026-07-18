@@ -126,7 +126,7 @@ export function FooterSection({ isActive, direction }: FooterSectionProps) {
           {isActive && (
             <motion.footer
               key="footer-content"
-              className="w-full bg-white/5 border border-white/10 rounded-3xl p-8 md:p-12 shadow-2xl backdrop-blur-md"
+              className="w-full bg-white/5 border border-white/10 rounded-2xl md:rounded-3xl p-6 sm:p-8 md:p-12 shadow-2xl backdrop-blur-md max-h-[85vh] overflow-y-auto no-scrollbar"
               initial="hidden"
               animate="visible"
               exit="exit"
@@ -150,21 +150,21 @@ export function FooterSection({ isActive, direction }: FooterSectionProps) {
               style={{ perspective: 1000 }}
             >
               <div className="w-full mx-auto">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 mb-12">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-4 gap-y-8 lg:gap-12 mb-8 md:mb-12">
                   {/* Logos Column */}
-                  <div className="flex flex-row items-start gap-4 w-full">
+                  <div className="col-span-2 md:col-span-3 lg:col-span-1 flex flex-row items-center justify-center lg:justify-start gap-4 w-full">
                     {footerData.logos.map((logo, idx) => (
                       <img
                         key={idx}
                         src={logo}
                         alt={`Logo ${idx + 1}`}
-                        className="h-12 w-auto rounded-sm object-contain"
+                        className="h-10 md:h-12 w-auto rounded-sm object-contain"
                       />
                     ))}
                   </div>
 
                   {/* Quick Links Column */}
-                  <div>
+                  <div className="col-span-1">
                     <h4 className="text-gold font-semibold mb-6 uppercase tracking-wider text-sm">
                       {footerData.quickLinks.title}
                     </h4>
@@ -183,7 +183,7 @@ export function FooterSection({ isActive, direction }: FooterSectionProps) {
                   </div>
 
                   {/* Resources Column */}
-                  <div>
+                  <div className="col-span-1">
                     <h4 className="text-gold font-semibold mb-6 uppercase tracking-wider text-sm">
                       {footerData.resources.title}
                     </h4>
@@ -202,7 +202,7 @@ export function FooterSection({ isActive, direction }: FooterSectionProps) {
                   </div>
 
                   {/* Contact Info Column */}
-                  <div>
+                  <div className="col-span-2 md:col-span-1">
                     <h4 className="text-gold font-semibold mb-6 uppercase tracking-wider text-sm">
                       {footerData.contact.title}
                     </h4>
@@ -214,7 +214,7 @@ export function FooterSection({ isActive, direction }: FooterSectionProps) {
                   </div>
 
                   {/* Follow Us Column */}
-                  <div>
+                  <div className="col-span-2 md:col-span-1">
                     <h4 className="text-gold font-semibold mb-6 uppercase tracking-wider text-sm">
                       {footerData.socials.title}
                     </h4>

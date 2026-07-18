@@ -11,7 +11,7 @@ interface ProjectsSectionProps {
 
 export function ProjectsSection({ isActive, direction }: ProjectsSectionProps) {
   return (
-    <section className="absolute inset-0 flex items-center justify-center pt-24 overflow-hidden pointer-events-none">
+    <section className="absolute inset-0 flex items-center justify-center pt-32 md:pt-24 overflow-hidden pointer-events-none">
       <div className={`container px-4 md:px-6 flex flex-col items-center justify-center h-full max-w-6xl z-10 ${isActive ? 'pointer-events-auto' : 'pointer-events-none'}`}>
         <AnimatePresence mode="wait">
           {isActive && (

@@ -113,7 +113,7 @@ export function Footer() {
     <footer className="w-full bg-background border-t border-white/10 mt-auto">
       <div className="w-full bg-white/5 py-12 px-6 md:px-12 backdrop-blur-md">
         <div className="container mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 mb-6 md:mb-12">
             {/* Logos Column */}
             <div className="flex flex-row items-start gap-4 w-full">
               {footerData.logos.map((logo, idx) => (
@@ -131,7 +131,7 @@ export function Footer() {
               <h4 className="text-gold font-semibold mb-6 uppercase tracking-wider text-sm">
                 {footerData.quickLinks.title}
               </h4>
-              <ul className="space-y-4">
+              <ul className="space-y-2 md:space-y-4">
                 {footerData.quickLinks.links.map((link) => (
                   <li key={link.label}>
                     <Link
@@ -150,7 +150,7 @@ export function Footer() {
               <h4 className="text-gold font-semibold mb-6 uppercase tracking-wider text-sm">
                 {footerData.resources.title}
               </h4>
-              <ul className="space-y-4">
+              <ul className="space-y-2 md:space-y-4">
                 {footerData.resources.links.map((link) => (
                   <li key={link.label}>
                     <Link
@@ -169,7 +169,7 @@ export function Footer() {
               <h4 className="text-gold font-semibold mb-6 uppercase tracking-wider text-sm">
                 {footerData.contact.title}
               </h4>
-              <ul className="space-y-4 text-muted-foreground">
+              <ul className="space-y-2 md:space-y-4 text-muted-foreground">
                 {footerData.contact.info.map((info, idx) => (
                   <li key={idx}>{info}</li>
                 ))}
@@ -183,15 +183,23 @@ export function Footer() {
               </h4>
               <div className="flex flex-wrap gap-2 md:gap-3">
                 {footerData.socials.platforms.map((platform) => {
-                  const Icon = platform.name === 'Facebook' ? Facebook :
-                               platform.name === 'Twitter' ? Twitter :
-                               platform.name === 'Instagram' ? Instagram :
-                               platform.name === 'Linkedin' ? Linkedin :
-                               platform.name === 'Youtube' ? Youtube :
-                               platform.name === 'Tiktok' ? Tiktok : null;
-                  
+                  const Icon =
+                    platform.name === "Facebook"
+                      ? Facebook
+                      : platform.name === "Twitter"
+                        ? Twitter
+                        : platform.name === "Instagram"
+                          ? Instagram
+                          : platform.name === "Linkedin"
+                            ? Linkedin
+                            : platform.name === "Youtube"
+                              ? Youtube
+                              : platform.name === "Tiktok"
+                                ? Tiktok
+                                : null;
+
                   if (!Icon) return null;
-                  
+
                   return (
                     <Link
                       key={platform.name}
@@ -207,7 +215,7 @@ export function Footer() {
           </div>
 
           {/* Copyright */}
-          <div className="border-t border-white/10 pt-8 w-full flex flex-col md:flex-row items-center justify-between">
+          <div className="border-t border-white/10 pt-4 md:pt-8 w-full flex flex-col md:flex-row items-center justify-between">
             <p className="text-sm text-center text-muted-foreground w-full">
               {footerData.copyright}
             </p>

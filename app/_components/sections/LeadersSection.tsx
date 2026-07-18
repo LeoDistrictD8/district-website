@@ -41,12 +41,12 @@ export function LeadersSection({ isActive, direction }: LeadersSectionProps) {
                   exit: { opacity: 0, y: -100, transition: { duration: 0.6 } },
                 }}
                 style={{ perspective: 1000 }}
-                className="font-heading text-4xl md:text-6xl font-bold tracking-tight mb-12 text-center bg-clip-text text-transparent bg-gradient-to-br from-foreground to-foreground/70"
+                className="font-heading text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight mb-6 md:mb-12 text-center bg-clip-text text-transparent bg-gradient-to-br from-foreground to-foreground/70"
               >
                 District Leaders
               </motion.h2>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full mb-12">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 md:gap-8 w-full mb-6 md:mb-12">
                 {currentLeadersData
                   .filter(
                     (leader) =>
@@ -78,7 +78,7 @@ export function LeadersSection({ isActive, direction }: LeadersSectionProps) {
                       style={{ perspective: 1000 }}
                       className="flex flex-col items-center group cursor-pointer"
                     >
-                      <div className="relative w-full aspect-[4/5] rounded-3xl overflow-hidden mb-6 border border-white/10 shadow-2xl">
+                      <div className="relative w-full aspect-[4/5] rounded-xl md:rounded-3xl overflow-hidden mb-3 md:mb-6 border border-white/10 shadow-2xl">
                         <div className="absolute inset-0 bg-gold/20 opacity-0 group-hover:opacity-100 mix-blend-overlay transition-opacity duration-500 z-10" />
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
@@ -87,10 +87,10 @@ export function LeadersSection({ isActive, direction }: LeadersSectionProps) {
                           className="w-full h-full object-cover bg-white transition-all duration-700 scale-100 group-hover:scale-110"
                         />
                       </div>
-                      <h3 className="text-xl font-semibold mb-1 text-foreground transition-colors group-hover:text-gold text-center">
+                      <h3 className="text-sm sm:text-lg md:text-xl font-semibold mb-0.5 md:mb-1 text-foreground transition-colors group-hover:text-gold text-center">
                         {leader.name}
                       </h3>
-                      <p className="text-gold/80 font-medium tracking-wide uppercase text-xs text-center">
+                      <p className="text-gold/80 font-medium tracking-wide uppercase text-[10px] md:text-xs text-center line-clamp-2 md:line-clamp-1">
                         {leader.position}
                       </p>
                     </motion.div>
@@ -107,12 +107,12 @@ export function LeadersSection({ isActive, direction }: LeadersSectionProps) {
                   },
                   exit: { opacity: 0, y: 20, transition: { duration: 0.4 } },
                 }}
-                className="mt-8 relative z-50 pointer-events-auto"
+                className="mt-4 md:mt-8 relative z-50 pointer-events-auto"
               >
                 <Link href="/leaders/current">
                   <Button
                     variant="outline"
-                    className="rounded-full px-8 py-6 text-lg border-gold text-gold hover:!bg-gold hover:!text-black transition-all"
+                    className="rounded-full px-6 py-4 md:px-8 md:py-6 text-sm md:text-lg border-gold text-gold hover:!bg-gold hover:!text-black transition-all"
                   >
                     Meet All Leaders
                   </Button>

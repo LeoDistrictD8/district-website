@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import Link from "next/link";
 
 type NavItem = {
@@ -40,11 +40,14 @@ interface NavbarProps {
 
 export function Navbar({ activeIndex = 0, setActiveIndex }: NavbarProps) {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [expandedMobileItem, setExpandedMobileItem] = useState<string | null>(null);
 
   const handleClick = (item: NavItem) => {
     if (item.index !== undefined && setActiveIndex) {
       setActiveIndex(item.index);
     }
+    setIsMobileMenuOpen(false);
   };
 
   return (
@@ -127,25 +130,80 @@ export function Navbar({ activeIndex = 0, setActiveIndex }: NavbarProps) {
         </ul>
 
         <div className="md:hidden flex items-center">
-          <button className="text-foreground/80 hover:text-gold p-2 outline-none">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <line x1="4" x2="20" y1="12" y2="12" />
-              <line x1="4" x2="20" y1="6" y2="6" />
-              <line x1="4" x2="20" y1="18" y2="18" />
-            </svg>
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="text-foreground/80 hover:text-gold p-2 outline-none"
+          >
+            {isMobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
       </nav>
+
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.2 }}
+            className="absolute top-[80px] left-4 right-4 bg-grey-dark/95 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl overflow-hidden py-4 px-4 flex flex-col gap-4 md:hidden"
+          >
+            {navLinks.map((link) => (
+              <div key={link.name} className="flex flex-col">
+                {link.href && !link.subItems ? (
+                  <Link
+                    href={link.href}
+                    onClick={() => handleClick(link)}
+                    className="text-base font-medium text-foreground/80 hover:text-gold py-2"
+                  >
+                    {link.name}
+                  </Link>
+                ) : (
+                  <>
+                    <button
+                      onClick={() =>
+                        setExpandedMobileItem(
+                          expandedMobileItem === link.name ? null : link.name
+                        )
+                      }
+                      className="flex items-center justify-between text-base font-medium text-foreground/80 hover:text-gold py-2 w-full text-left"
+                    >
+                      {link.name}
+                      {link.subItems && (
+                        <ChevronDown
+                          className={cn(
+                            "w-5 h-5 transition-transform",
+                            expandedMobileItem === link.name && "rotate-180"
+                          )}
+                        />
+                      )}
+                    </button>
+                    {link.subItems && expandedMobileItem === link.name && (
+                      <div className="flex flex-col pl-4 mt-2 border-l border-white/10 space-y-2">
+                        {link.subItems.map((subItem) => (
+                          <Link
+                            key={subItem.name}
+                            href={subItem.href || "#"}
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            className="text-sm font-medium text-foreground/70 hover:text-gold py-1"
+                          >
+                            {subItem.name}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </>
+                )}
+              </div>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.header>
   );
 }

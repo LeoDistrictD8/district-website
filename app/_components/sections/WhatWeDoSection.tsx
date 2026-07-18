@@ -10,8 +10,10 @@ interface WhatWeDoSectionProps {
 
 export function WhatWeDoSection({ isActive, direction }: WhatWeDoSectionProps) {
   return (
-    <section className="absolute inset-0 flex items-center justify-center pt-24 overflow-hidden pointer-events-none">
-      <div className={`container px-4 md:px-6 flex flex-col items-center justify-center h-full max-w-6xl z-10 ${isActive ? 'pointer-events-auto' : 'pointer-events-none'}`}>
+    <section className="absolute inset-0 flex items-center justify-center pt-16 md:pt-24 overflow-hidden pointer-events-none">
+      <div
+        className={`container px-4 md:px-6 flex flex-col items-center justify-center h-full max-w-6xl z-10 ${isActive ? "pointer-events-auto" : "pointer-events-none"}`}
+      >
         <AnimatePresence mode="wait">
           {isActive && (
             <motion.div
@@ -21,11 +23,20 @@ export function WhatWeDoSection({ isActive, direction }: WhatWeDoSectionProps) {
               animate="visible"
               exit="exit"
             >
-              <motion.h2 
+              <motion.h2
                 variants={{
                   hidden: { opacity: 0, y: -100, rotateX: -45 },
-                  visible: { opacity: 1, y: 0, rotateX: 0, transition: { duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.1 } },
-                  exit: { opacity: 0, y: -100, transition: { duration: 0.6 } }
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    rotateX: 0,
+                    transition: {
+                      duration: 1.2,
+                      ease: [0.16, 1, 0.3, 1],
+                      delay: 0.1,
+                    },
+                  },
+                  exit: { opacity: 0, y: -100, transition: { duration: 0.6 } },
                 }}
                 style={{ perspective: 1000 }}
                 className="font-heading text-5xl md:text-6xl font-bold tracking-tight mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70"
@@ -39,35 +50,37 @@ export function WhatWeDoSection({ isActive, direction }: WhatWeDoSectionProps) {
                     key={block.id}
                     variants={{
                       hidden: { opacity: 0, y: 150, scale: 0.8 },
-                      visible: { 
-                        opacity: 1, 
-                        y: 0, 
+                      visible: {
+                        opacity: 1,
+                        y: 0,
                         scale: 1,
-                        transition: { 
-                          duration: 1, 
-                          ease: [0.22, 1, 0.36, 1], 
-                          delay: 0.3 + (index * 0.15) // Stagger effect
-                        } 
+                        transition: {
+                          duration: 1,
+                          ease: [0.22, 1, 0.36, 1],
+                          delay: 0.3 + index * 0.15, // Stagger effect
+                        },
                       },
-                      exit: { 
-                        opacity: 0, 
-                        y: 100, 
+                      exit: {
+                        opacity: 0,
+                        y: 100,
                         scale: 0.8,
-                        transition: { duration: 0.5, delay: index * 0.05 } 
-                      }
+                        transition: { duration: 0.5, delay: index * 0.05 },
+                      },
                     }}
-                    className="flex flex-col p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md shadow-xl hover:bg-white/10 transition-colors group relative overflow-hidden"
+                    className="flex flex-col py-4 px-8 md:p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md shadow-xl hover:bg-white/10 transition-colors group relative overflow-hidden"
                   >
                     {/* Futuristic glow on hover */}
                     <div className="absolute inset-0 bg-gradient-to-br from-gold/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                    
-                    <div className="text-4xl font-light text-gold/50 mb-4 font-heading group-hover:text-gold transition-colors duration-300">
-                      0{block.id}
+
+                    <div className="flex flex-row items-center gap-3 mb-2 md:mb-0 md:flex-col md:items-start md:gap-0">
+                      <div className="text-2xl md:text-4xl font-light text-gold/50 md:mb-4 font-heading group-hover:text-gold transition-colors duration-300">
+                        0{block.id}
+                      </div>
+                      <h3 className="text-lg md:text-xl font-semibold md:mb-3 text-foreground group-hover:text-gold transition-colors duration-300">
+                        {block.title}
+                      </h3>
                     </div>
-                    <h3 className="text-xl font-semibold mb-3 text-foreground group-hover:text-gold transition-colors duration-300">
-                      {block.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed relative z-10">
+                    <p className="text-xs md:text-sm text-muted-foreground leading-relaxed relative z-10">
                       {block.description}
                     </p>
                   </motion.div>
